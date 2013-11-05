@@ -7,7 +7,7 @@ ifneq ($(KERNELRELEASE),)
 # line; invoke the kernel build system.
 else
 
-	KERNELDIR ?= /usr/src/linux-2.6.38.6-26.rc1.fc15.i686.PAE
+	KERNELDIR ?= /lib/modules/$(shell uname -r)/build 
 	PWD := $(shell pwd)
 
 default:
